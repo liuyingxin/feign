@@ -1,7 +1,7 @@
 package com.feign.demo.api;
 
 import com.feign.demo.api.commons.ResponseResult;
-import com.feign.demo.web.feign.PlanConfirmDto;
+import com.feign.demo.web.feign.dto.PlanConfirmDto;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.RequestBody;

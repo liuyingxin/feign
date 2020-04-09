@@ -9,12 +9,15 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.scheduling.annotation.EnableScheduling;
+
+@Slf4j
 @MapperScan("com.feign.demo.*.mapper")
 @SpringBootApplication(exclude = DruidDataSourceAutoConfigure.class)
 @EnableConfigurationProperties
 @EnableSwagger2Doc
 @EnableFeignClients
-@Slf4j
+@EnableScheduling
 public class DemoApplication {
 
     public static void main(String[] args) {
@@ -27,5 +30,6 @@ public class DemoApplication {
         log.info("==================================");
         log.info("xinFinance Server startup");
         log.info("==================================");
+        log.debug("==================================");
     }
 }

@@ -3,7 +3,7 @@ package com.feign.demo.web.controller;
 import com.feign.demo.api.FianceApi;
 import com.feign.demo.api.commons.ResponseResult;
 import com.feign.demo.web.feign.MessageClient;
-import com.feign.demo.web.feign.PlanConfirmDto;
+import com.feign.demo.web.feign.dto.PlanConfirmDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;

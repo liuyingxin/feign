@@ -1,4 +1,4 @@
-package com.feign.demo.web.feign;
+package com.feign.demo.web.feign.dto;
 
 import lombok.Data;
 import lombok.Getter;
